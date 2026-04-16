@@ -8,11 +8,6 @@ from rest_framework import status
 
 from django.http import JsonResponse
 
-def home(request):
-    return JsonResponse({
-        "message": "HNG Stage 0 API is live",
-        "endpoint": "/api/classify?name=john"
-    })
 
 @api_view(["GET"])
 def classify_name(request):
